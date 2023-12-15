@@ -19,7 +19,7 @@ export interface CategoryServiceInterface {
      * @param id 類別 id
      * @param updateCatDto 類別物件
      */
-    updaterCategory(
+    updateCategory(
         id: string,
         updateCatDto: UpdateCategoryDto
     ): Promise<CategoryDto>;

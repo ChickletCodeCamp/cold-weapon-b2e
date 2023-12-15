@@ -31,7 +31,7 @@ export class CategoryController {
 
     @Put(':id')
     async update(@Param('id') id: string, @Body() updateCatDto: UpdateCategoryDto): Promise<CategoryDto> {
-        return await this.categoryService.updaterCategory(id, updateCatDto);
+        return await this.categoryService.updateCategory(id, updateCatDto);
     }
 
     @Delete(':id')
